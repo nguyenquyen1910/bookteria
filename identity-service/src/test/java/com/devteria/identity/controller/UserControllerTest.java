@@ -1,7 +1,5 @@
 package com.devteria.identity.controller;
 
-import java.time.LocalDate;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
@@ -38,27 +36,16 @@ public class UserControllerTest {
 
     private UserCreationRequest request;
     private UserResponse userResponse;
-    private LocalDate dob;
 
     @BeforeEach
     void initData() {
-        dob = LocalDate.of(1990, 1, 1);
-
         request = UserCreationRequest.builder()
                 .username("john")
-                .firstName("John")
-                .lastName("Doe")
                 .password("12345678")
-                .dob(dob)
                 .build();
 
-        userResponse = UserResponse.builder()
-                .id("cf0600f538b3")
-                .username("john")
-                .firstName("John")
-                .lastName("Doe")
-                .dob(dob)
-                .build();
+        userResponse =
+                UserResponse.builder().id("cf0600f538b3").username("john").build();
     }
 
     @Test

@@ -5,7 +5,6 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
-import java.time.LocalDate;
 import java.util.Optional;
 
 import org.assertj.core.api.Assertions;
@@ -35,35 +34,18 @@ public class UserServiceTest {
     private UserCreationRequest request;
     private UserResponse userResponse;
     private User user;
-    private LocalDate dob;
 
     @BeforeEach
     void initData() {
-        dob = LocalDate.of(1990, 1, 1);
-
         request = UserCreationRequest.builder()
                 .username("john")
-                .firstName("John")
-                .lastName("Doe")
                 .password("12345678")
-                .dob(dob)
                 .build();
 
-        userResponse = UserResponse.builder()
-                .id("cf0600f538b3")
-                .username("john")
-                .firstName("John")
-                .lastName("Doe")
-                .dob(dob)
-                .build();
+        userResponse =
+                UserResponse.builder().id("cf0600f538b3").username("john").build();
 
-        user = User.builder()
-                .id("cf0600f538b3")
-                .username("john")
-                .firstName("John")
-                .lastName("Doe")
-                .dob(dob)
-                .build();
+        user = User.builder().id("cf0600f538b3").username("john").build();
     }
 
     @Test
