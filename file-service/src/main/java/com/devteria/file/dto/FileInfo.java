@@ -1,6 +1,4 @@
-package com.devteria.profile.dto;
-
-import com.fasterxml.jackson.annotation.JsonInclude;
+package com.devteria.file.dto;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -14,11 +12,11 @@ import lombok.experimental.FieldDefaults;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class ApiResponse<T> {
-    @Builder.Default
-    private int code = 1000;
-
-    private String message;
-    private T result;
+public class FileInfo {
+    String name;
+    String contentType;
+    long size;
+    String md5Checksum;
+    String path;
+    String url;
 }
