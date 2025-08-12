@@ -1,4 +1,4 @@
-package com.devteria.identity.configuration;
+package com.devteria.profile.configuration;
 
 import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestContextHolder;

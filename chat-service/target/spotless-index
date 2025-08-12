@@ -1,0 +1,20 @@
+m9+ekr4lnLix1O1U/4MjmL26fDN59qulek4Fwb48P98=
+src\main\java\com\devteria\chat\ChatApplication.java 2025-08-12T14:13:59.827631200Z
+src\main\java\com\devteria\chat\configuration\AuthenticationRequestInterceptor.java 2025-08-12T14:14:14.397995Z
+src\main\java\com\devteria\chat\configuration\CustomJwtDecoder.java 2025-08-12T14:14:14.461473100Z
+src\main\java\com\devteria\chat\configuration\JwtAuthenticationEntryPoint.java 2025-08-12T14:14:14.511868400Z
+src\main\java\com\devteria\chat\configuration\SecurityConfig.java 2025-08-12T14:14:14.623897800Z
+src\main\java\com\devteria\chat\controller\ConversationController.java 2025-08-12T14:14:14.671629100Z
+src\main\java\com\devteria\chat\dto\ApiResponse.java 2025-08-12T14:14:14.706760700Z
+src\main\java\com\devteria\chat\dto\request\ConversationRequest.java 2025-08-12T14:14:14.736576600Z
+src\main\java\com\devteria\chat\dto\response\ConversationResponse.java 2025-08-12T14:14:14.769968200Z
+src\main\java\com\devteria\chat\dto\response\UserProfileResponse.java 2025-08-12T14:13:59.836788100Z
+src\main\java\com\devteria\chat\entity\Conversation.java 2025-08-12T14:14:14.810764Z
+src\main\java\com\devteria\chat\entity\ParticipantInfo.java 2025-08-12T14:13:59.838787100Z
+src\main\java\com\devteria\chat\exception\AppException.java 2025-08-12T14:13:59.839794Z
+src\main\java\com\devteria\chat\exception\ErrorCode.java 2025-08-12T14:14:14.860773200Z
+src\main\java\com\devteria\chat\exception\GlobalExceptionHandler.java 2025-08-12T14:14:14.912941300Z
+src\main\java\com\devteria\chat\mapper\ConversationMapper.java 2025-08-12T14:14:14.930495400Z
+src\main\java\com\devteria\chat\repository\ConversationRepository.java 2025-08-12T14:14:14.951546900Z
+src\main\java\com\devteria\chat\repository\httpclient\ProfileClient.java 2025-08-12T14:14:14.975389100Z
+src\main\java\com\devteria\chat\service\ConversationService.java 2025-08-12T14:14:15.009877800Z
