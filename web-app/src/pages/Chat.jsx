@@ -197,7 +197,6 @@ export default function Chat() {
       socketRef.current.on("message", (message) => {
         console.log("New message received:", message);
 
-        /*
         const messageObject = JSON.parse(message);
         console.log("Parsed message object:", messageObject);
 
@@ -205,7 +204,6 @@ export default function Chat() {
         if (messageObject?.conversationId) {
           handleIncomingMessage(messageObject);
         }
-        */
       });
     }
 
@@ -255,7 +253,6 @@ export default function Chat() {
   // Helper function to handle incoming socket messages
   const handleIncomingMessage = useCallback(
     (message) => {
-  
       // Add the new message to the appropriate conversation
       setMessagesMap((prev) => {
         const existingMessages = prev[message.conversationId] || [];
@@ -266,7 +263,7 @@ export default function Chat() {
           if (msg.id && message.id) {
             return msg.id === message.id;
           }
-          
+
           return false;
         });
 
@@ -286,7 +283,7 @@ export default function Chat() {
       });
 
       // Update the conversation list with the new last message
-      setConversations((prevConversations) => {        
+      setConversations((prevConversations) => {
         const updatedConversations = prevConversations.map((conv) =>
           conv.id === message.conversationId
             ? {
@@ -301,7 +298,7 @@ export default function Chat() {
               }
             : conv
         );
-        
+
         return updatedConversations;
       });
     },
